@@ -304,27 +304,35 @@
                     </div>
                 </div>
 
-                <!-- Project 2: ProgressSoft Internship (Fintech Simulation) -->
-                <div
-                    class="project-card bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 fade-up">
+                                <!-- Project 2: Order Platform (ProgressSoft Internship) -->
+                <div class="project-card bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 fade-up">
                     <div class="flex items-start justify-between">
-                        <span class="text-3xl">💳</span>
-                        <span
-                            class="text-xs font-mono bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full">Internship</span>
+                        <span class="text-3xl">📦</span>
+                        <span class="text-xs font-mono bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full">Internship</span>
                     </div>
-                    <h3 class="text-xl font-bold mt-4">Payment Transaction Simulator</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Backend simulation for fintech
-                        transaction workflows.</p>
+                    <h3 class="text-xl font-bold mt-4">Order Platform</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">Spring Boot order management system with state-machine lifecycle, CSV bulk import, and XML audit-trail export.</p>
 
                     <div class="mt-4 space-y-2 text-sm">
-                        <p><span class="font-semibold">Problem:</span> Testing payment flows required complex staging
-                            environments.</p>
-                        <p><span class="font-semibold">Solution:</span> Developed a transaction simulation module using
-                            Python and SQL to process mock payments, log statuses, and generate transaction reports.</p>
-                        <p><span class="font-semibold">Impact:</span> Reduced manual testing effort by streamlining
-                            validation of transaction lifecycles.</p>
-                        <!-- Note: Since the user left bullets empty, I filled with realistic fintech tasks. They can easily edit this. -->
+                        <p><span class="font-semibold">Problem:</span> Manual order tracking lacked auditability, state validation, and bulk processing capabilities.</p>
+                        <p><span class="font-semibold">Solution:</span> Built a <strong class="text-slate-800 dark:text-slate-200">Spring Boot</strong> platform with explicit state machine (PENDING → VALIDATING → CHARGING → PERSISTING → COMPLETED), <strong class="text-slate-800 dark:text-slate-200">CSV bulk import</strong> with validation, and <strong class="text-slate-800 dark:text-slate-200">XML audit-trail export</strong> validated against an XSD schema.</p>
+                        <p><span class="font-semibold">Impact:</span> Enabled full auditability of order lifecycles, reduced manual data entry with batch processing, and automated failure state tracking with <strong class="text-slate-800 dark:text-slate-200">transaction rollback isolation</strong>.</p>
                     </div>
+
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">Java 11</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">Spring Boot</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">Spring Data JPA</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">H2 Database</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">JAXB</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">Mockito</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">Maven</span>
+                        <span class="px-3 py-1 bg-white dark:bg-slate-700 rounded-full text-xs border border-slate-200 dark:border-slate-600">State Machine</span>
+                    </div>
+                    <div class="flex gap-4 mt-5 text-sm font-medium">
+                        <a href="https://gitlab.com/Li1-sha/progresssoft-dev-intern" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">🔗 GitLab</a>
+                    </div>
+                </div>
 
                     <div class="flex flex-wrap gap-2 mt-4">
                         <span
